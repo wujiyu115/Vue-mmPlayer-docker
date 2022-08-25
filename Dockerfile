@@ -8,7 +8,7 @@ RUN apk update && apk add --no-cache wget curl git zip
 
 WORKDIR /app
 
-RUN git clone --recurse-submodules https://github.com/CrazyRico/Vue-mmPlayer.git
+RUN git clone --recurse-submodules https://github.com/wujiyu115/Vue-mmPlayer.git
 
 RUN cd Vue-mmPlayer \
 	&& echo 'VUE_APP_BASE_API_URL = /api' > .env \
@@ -28,7 +28,7 @@ RUN unzip dist.zip && rm -rf dist.zip
 
 ADD default.conf /etc/nginx/http.d/
 
-RUN cd /app && git clone https://github.com/Binaryify/NeteaseCloudMusicApi.git
+RUN cd /app && git clone https://github.com/wujiyu115/NeteaseCloudMusicApi.git
 
 RUN cd NeteaseCloudMusicApi \
 	&& npm config set registry "https://registry.npmmirror.com/" \
@@ -42,6 +42,6 @@ ADD check.sh ./
 
 RUN chmod +x /app/NeteaseCloudMusicApi/*.sh
 
-EXPOSE 80 443 3000
+EXPOSE 80 443 5001
 
 ENTRYPOINT ["./docker-entrypoint.sh"]
