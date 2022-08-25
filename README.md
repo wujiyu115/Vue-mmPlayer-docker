@@ -5,10 +5,10 @@
 
 # build
 ```bash
-# docker build -t yaonew/mmplayer .
+# docker build -t wujiyu115/mmplayer .
 ```
 
 # run
 ```bash
-# docker run --name mmPlayer --restart always -dit -p 80:80 yaonew/mmplayer
+# docker run --name mmPlayer --restart always -dit -p 80:80 wujiyu115/mmplayer:master
 ```
