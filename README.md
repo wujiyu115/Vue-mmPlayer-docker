@@ -10,5 +10,5 @@
 
 # run
 ```bash
-# docker run --name mm_player --restart always -dit -p 80:80 wujiyu115/mmplayer:main
+# docker run --name mmplayer --restart always -dit -p 80:80 wujiyu115/mmplayer:main
 ```
