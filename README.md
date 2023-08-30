@@ -12,3 +12,5 @@
 ```bash
 # docker run --name mm_player --restart always -dit -p 80:80 -v /mnt/music:/data wujiyu115/mmplayer:main
 ```
+# version
+1.0
